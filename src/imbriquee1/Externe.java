@@ -8,11 +8,11 @@ package imbriquee1;
  *
  */
 public class Externe {
-	static double taux = 1.8;
+	static double taux = 0.18;
 	
 	static class Interne {
 		public double calculeTTC(double prix) {
-			return prix * taux;
+			return prix * (1.0+taux);
 		}
 	}
 }

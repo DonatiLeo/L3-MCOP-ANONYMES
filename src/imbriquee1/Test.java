@@ -13,7 +13,7 @@ public class Test {
 		
 		Externe.Interne objet = new Externe.Interne();	
 		System.out.println(objet.calculeTTC(100));
-		Externe.taux = 1.5;
+		Externe.taux = 0.15;
 		System.out.println(objet.calculeTTC(100));	
 	}
 }

@@ -24,7 +24,7 @@ public class Test {
 		tab.sort( new Comparator<Integer>() {
 			@Override
 			public int compare(Integer o1, Integer o2) {
-				if  (Math.sin(o2) > Math.sin(o1))
+				if  (Math.sin(o2) < Math.sin(o1))
 					return 1;
 				else
 					return -1;
