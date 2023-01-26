@@ -17,6 +17,11 @@ public class Test {
 	
 	public static void main(String[] args) {
 		ArrayList<Integer> tab = new ArrayList<>();
+		
+		Consumer<Integer> operation = t -> { 
+			System.out.println("pour  "+t+" on a "+Math.sin(t));
+		};
+		
 		for (int i=0; i<10; i++)
 			tab.add(i);
 		
@@ -35,13 +40,18 @@ public class Test {
 				System.out.println("pour  "+t+" on a "+Math.sin(t));
 			}
 		});
-		*/
+		
 		//AVEC EXPRESSION LAMBDA
 		tab.forEach(
 			t -> { 
 				System.out.println("pour  "+t+" on a "+Math.sin(t));
 			}
-		);
+		);*/
+		
+		tab.forEach(operation);
+		
+		operation = t -> System.out.println("opération différente "+t);
+		tab.forEach(operation);
 
 	}
 }
