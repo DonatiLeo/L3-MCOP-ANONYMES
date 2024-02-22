@@ -31,7 +31,12 @@ public class Test {
 			}
 		});
 		
-		System.out.print(tab);
+		System.out.println(tab);
+		
+		System.out.println("\nVérification :");
+		for (int i : tab) {
+			System.out.println("sinus de " + i+ " est "+ Math.sin(i));
+		}
 
 	}
 

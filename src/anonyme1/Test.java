@@ -11,10 +11,11 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		Calculateur calc = new Calculateur(
+		Calculateur calc = 
+			new Calculateur(
 				new Calculable() {
 					public double fonction(double x) {
-						return x*x;
+						return x*x+1;
 					}
 				}
 			);	
